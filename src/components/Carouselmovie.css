@@ -1,0 +1,118 @@
+.brandslide img {
+    width: 78vw;
+    height: 78vh;
+    border-radius:5%;
+    margin: 0 auto;
+    margin-bottom: 10px;
+  }
+  
+  .brandslide {
+    transform: scale(0.2);
+    transition: transform 300ms;
+    opacity: 0.5;
+  }
+  
+  .brandactiveSlide {
+    transform: scale(1.0);
+    opacity: 1;
+  }
+  
+  .arrow {
+    background-color: transparent;
+    position: absolute;
+    font-size: 30px;
+    cursor: pointer;
+    z-index: 10;
+  }
+  
+  .arrow svg {
+    transition: color 300ms;
+  }
+  
+  .arrow svg:hover {
+    color: #4f46e5;
+  }
+  
+  .next {
+    color: red;
+    border: black solid 1px;
+    border-radius: 50%;
+    margin-right: 15px;
+    padding: 5px;
+      font-size: 2rem;
+    right: 5%;
+    top: 50%;
+  }
+  
+  .prev {
+    color: red;
+    border: black solid 1px;
+    border-radius: 50%;
+    margin-left: 15px;
+    padding: 5px;
+      font-size: 2rem;
+    left: 5%;
+    top: 50%;
+  }
+  @media screen and (max-width: 960px){
+   
+    /* .brandactiveSlide {
+  
+      height: 110%;
+    } */
+  
+  
+    .brandslide img { 
+      box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+      height: 100%;
+      border-radius: 15%;
+      margin-top: 20px;
+      margin-bottom: 20px;
+      width: 85%;
+    }
+    
+    .brandslide {
+      transform: scale(0.2);
+      transition: transform 300ms;
+      opacity: 0.5;
+      /* height: 80vh; */
+    }
+    
+    .brandactiveSlide {
+      transform: scale(1.1);
+      opacity: 1;
+    }
+    
+    .arrow {
+  
+      background-color: transparent;
+      position: absolute;
+      font-size: 30px;
+      cursor: pointer;
+      z-index: 10;
+    }
+    
+    .arrow svg {
+      transition: color 300ms;
+    }
+    
+    .arrow svg:hover {
+      color: #4f46e5;
+    }
+    
+    .next {
+      border: none;
+      color: white;
+      font-size: 2rem;
+      right: 0%;
+      top: 40%;
+    }
+    
+    .prev {
+      border: none;
+      color: white;
+      font-size: 2rem;
+      left: 0%;
+      top: 40%;
+    }
+  }
